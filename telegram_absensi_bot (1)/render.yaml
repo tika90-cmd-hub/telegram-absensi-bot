@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-absensi-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    autoDeploy: true
+    envVars:
+      - key: TOKEN
+        value: masukkan_token_bot_kamu_di_sini
